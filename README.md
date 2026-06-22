@@ -1,7 +1,5 @@
 # COFIEX BI — Análise de Financiamentos Externos do Brasil
 
-![COFIEX BI Logo](logo_cofiex.svg)
-
 Um projeto de análise exploratória e processamento de dados sobre financiamentos externos gerenciados pela COFIEX (Comissão para Assuntos Financeiros Externos). Com um ETL robusto em Python/Jupyter, este repositório preserva a integridade dos 3.548 registros originais enquanto fornece indicadores derivados, flags de qualidade e um dashboard interativo para responder dez questões estratégicas sobre a carteira de financiamentos brasileira.
 
 ## 📊 Dashboard Interativo
