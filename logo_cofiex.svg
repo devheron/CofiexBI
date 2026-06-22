@@ -1,0 +1,51 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffc107;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#mainGrad)"/>
+  
+  <!-- Data visualization lines (abstract) -->
+  <g stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- First line - upward trend -->
+    <path d="M 40 130 L 65 100 L 90 115 L 115 70 L 140 90" 
+          stroke="url(#accentGrad)" fill="none" opacity="0.9"/>
+    
+    <!-- Second line - parallel trend -->
+    <path d="M 40 150 L 65 130 L 90 140 L 115 105 L 140 120" 
+          stroke="white" fill="none" opacity="0.7" stroke-width="2"/>
+  </g>
+  
+  <!-- Data points -->
+  <g fill="url(#accentGrad)">
+    <circle cx="65" cy="100" r="4"/>
+    <circle cx="90" cy="115" r="4"/>
+    <circle cx="115" cy="70" r="4"/>
+    <circle cx="140" cy="90" r="4"/>
+  </g>
+  
+  <!-- Grid reference (subtle) -->
+  <g stroke="white" stroke-width="0.5" opacity="0.3">
+    <line x1="30" y1="155" x2="170" y2="155"/>
+    <line x1="50" y1="160" x2="50" y2="150"/>
+    <line x1="80" y1="160" x2="80" y2="150"/>
+    <line x1="110" y1="160" x2="110" y2="150"/>
+    <line x1="140" y1="160" x2="140" y2="150"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="175" 
+        font-family="Arial, sans-serif" 
+        font-size="16" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="white">COFIEX BI</text>
+</svg>
